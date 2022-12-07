@@ -11,12 +11,10 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring", uses = { AnswerMapper.class })
 public interface QuestionMapper {
 
-  QuestionResponseDto entityToDto(Question entity);
+	QuestionResponseDto entityToDto(Question entity);
 
-  List<QuestionResponseDto> entitiesToDtos(List<Question> entities);
+	List<QuestionResponseDto> entitiesToDtos(List<Question> entities);
 
-Question requestDtoToEntity(QuestionRequestDto questionRequestDto);
-  
-  
+	Question requestDtoToEntity(QuestionRequestDto questionRequestDto);
 
 }

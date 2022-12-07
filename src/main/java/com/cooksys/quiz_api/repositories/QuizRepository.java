@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface QuizRepository extends JpaRepository<Quiz, Long> {
 
-  // TODO: Do you need any derived queries? If so add them here.
+  
 
 }
